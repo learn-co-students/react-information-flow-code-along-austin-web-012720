@@ -3,9 +3,8 @@ import { getRandomColor } from './randomColorGenerator.js'
 import Child from './Child'
 
 class Parent extends Component {
-
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       color: getRandomColor()
     }
